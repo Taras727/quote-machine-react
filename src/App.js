@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
+import ContainerFluid from './components/ContainerFluid';
 
 class App extends React.Component {
   render() {
     return (
-      <div className='container-fluid'>
-        hello
-      </div>
+      <ContainerFluid />
     );
-  };
+  }
 }
 
 export default App;
