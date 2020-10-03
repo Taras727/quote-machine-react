@@ -1,8 +1,9 @@
 import React from 'react';
-import colors from './data';
+import { colors } from './data';
+import QuoteBox from './QuoteBox';
 
 class ContainerFluid extends React.Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
       color: 'blue'
@@ -21,21 +22,11 @@ class ContainerFluid extends React.Component {
       >
         <div className="row h-100 align-items-center">
           <div className="container-fluid">
-            <main className="row justify-content-center">
-              <div id="quote-box" className="col-xl-6 p-4 rounded bg-white">
-                <div className="row">
-                  <div />
-                  
-                  {/* <blockquote className="col blockquote">
-                    <p id="text" className="text-center"></p>
-                    <footer id="author" className="blockquote-footer text-right"></footer>
-                  </blockquote> */}
-                </div>        
-                
-                <div className="row justify-content-end px-3">
-                  <button id="new-quote" className="col-xl-5 btn btn-default text-white">New quote</button>
-                </div>
-              </div>
+            <main 
+              className="row justify-content-center"
+              style={ {color: `${this.state.color}`} }
+            >
+              <QuoteBox mainColor={ this.state.color } />
             </main>
           
             <footer className="row justify-content-center text-white">
