@@ -3,7 +3,7 @@ import { colors } from './data';
 import QuoteBox from './QuoteBox';
 
 class ContainerFluid extends React.Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       color: 'blue'
