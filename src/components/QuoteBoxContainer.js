@@ -39,7 +39,7 @@ class QuoteBox extends React.Component {
           <button
             id="new-author"
             style={ buttonStyleObj }
-            className="col-xl-5 btn btn-info text-white"
+            className="col-xl-5 btn text-white"
             onClick={ this.handleClick }
           >
             New quote
